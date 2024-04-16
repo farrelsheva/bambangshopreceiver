@@ -90,3 +90,8 @@ This is the place for you to write reflections:
 2. Variable static di Rust immutable karena prioritasnya pada memory safety. Rust tidak ingin ada data yang berubah secara tidak terduga, apalagi pada saat multi-threading.
 
 #### Reflection Subscriber-2
+1. `lib.rs` merupakan file yang berisi API dari library yang kita buat, biasanya diisi dengan `pub` declarations untuk functions, types, constansts, etc. yang ingin dijadikan crate.
+
+2. Dikarenakan sifat terpisah observer, kita bisa dengan mudah menambah subscriber tanpa modifikasi. Untuk instance main app yang lebih dari 1, lebih merujuk kepada pengarahan API yang berbeda. (Karena memang Aplikasi ini adalah aplikasi yang berbeda, bukan instance yang sama)
+
+3. Saya Belum mencoba untuk testing POSTMAN
